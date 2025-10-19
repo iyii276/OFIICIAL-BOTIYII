@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // Bot configuration
 const ADMIN_NUMBER = '2347078226362@c.us';
-const BOT_NAME = 'IYII Bot';
+const BOT_NAME = 'Iyii Bot';
 const OFFICIAL_WEBSITE = 'https://iyii.onrender.com';
 const AUDIOMACK_PROFILE = 'https://audiomack.com/Iyii217';
 
@@ -172,34 +172,33 @@ async function translateText(text, targetLanguage = 'english') {
 
 async function showMainMenu(message) {
   const menu = `
-  ╔═══❖・🍃 𝘾𝙝𝙖𝙩𝙈𝙖𝙨𝙩𝙚𝙧 𝘽𝙤𝙩・❖═══╗
+
+╔═══❖・🍃 _*IYII*_ 𝘽𝙤𝙩・❖═══╗
   🤖 *Bot Name:* *${BOT_NAME}*
-  👨‍💻 *Created by:* Iyiola Abifarin
+  👨‍💻 *Created by:* _*Iyiola Abifarin*_
 ╚════════════════════╝
 
 
-🎵  - Official Menu* 🎵
+🎵 *MENU* 🎵
+
 
 🤖 *AI Features*
-• !ai <message> - Chat with AI
-• !translate <text> <language> - Translate text
+🔹 !ai <message>
+🔹 !translate <text> <language>
 
 🔗 *Session Management*
-• !pair - Generate your session ID
-• !restore <id> - Restore your session
-• !menu - Show this menu
+🔹 !pair
+🔹 !restore <id>
+🔹 !menu
 
 🌐 *Official Links*
-• Website: ${OFFICIAL_WEBSITE}
-• Audiomack: ${AUDIOMACK_PROFILE}
+🔹 Website: ${OFFICIAL_WEBSITE}
+🔹 Audiomack: ${AUDIOMACK_PROFILE}
 
 👑 *Admin Commands*
-• !toggle_ai - Toggle AI auto-responder
-• !broadcast <msg> - Broadcast message
-• !stats - Show bot statistics
-
-
-© 2025 *${BOT_NAME}* | All rights reserved
+🔹 !toggle_ai
+🔹 !broadcast <msg>
+🔹 !stats
 
 *Auto-responder Status: ${botState.aiResponderEnabled ? '🟢 ON' : '🔴 OFF'}*
 *Need help? Contact admin.*
@@ -381,6 +380,5 @@ app.listen(port, () => {
 });
 
 client.initialize();
-
 
 console.log('🤖 Starting Iyii Bot...');
