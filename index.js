@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // Bot configuration
 const ADMIN_NUMBER = '2347078226362@c.us';
-const BOT_NAME = 'Iyii Bot';
+const BOT_NAME = 'IYII Bot';
 const OFFICIAL_WEBSITE = 'https://iyii.onrender.com';
 const AUDIOMACK_PROFILE = 'https://audiomack.com/Iyii217';
 
@@ -172,7 +172,13 @@ async function translateText(text, targetLanguage = 'english') {
 
 async function showMainMenu(message) {
   const menu = `
-🎵 *${BOT_NAME} - Official Menu* 🎵
+  ╔═══❖・🍃 𝘾𝙝𝙖𝙩𝙈𝙖𝙨𝙩𝙚𝙧 𝘽𝙤𝙩・❖═══╗
+  🤖 *Bot Name:* *${BOT_NAME}*
+  👨‍💻 *Created by:* Iyiola Abifarin
+╚════════════════════╝
+
+
+🎵  - Official Menu* 🎵
 
 🤖 *AI Features*
 • !ai <message> - Chat with AI
@@ -191,6 +197,9 @@ async function showMainMenu(message) {
 • !toggle_ai - Toggle AI auto-responder
 • !broadcast <msg> - Broadcast message
 • !stats - Show bot statistics
+
+
+© 2025 *${BOT_NAME}* | All rights reserved
 
 *Auto-responder Status: ${botState.aiResponderEnabled ? '🟢 ON' : '🔴 OFF'}*
 *Need help? Contact admin.*
@@ -372,5 +381,6 @@ app.listen(port, () => {
 });
 
 client.initialize();
+
 
 console.log('🤖 Starting Iyii Bot...');
